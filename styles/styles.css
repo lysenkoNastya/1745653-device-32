@@ -1,0 +1,173 @@
+.container {
+	margin: 0 auto;
+	max-width: 1160px;
+}
+
+li {
+	list-style: none;
+}
+
+.header-page {
+	padding: 48px 25px 30px 60px;
+	background: #FFE17F;
+}
+
+.nav *::before {
+	content: "";
+	display: inline-block;
+	color: #ffffff;
+}
+
+.search::before {
+	background: url("../img/search.svg") no-repeat center;
+	width: 16px;
+	height: 16px;
+}
+
+.user-wrap::before {
+	background: url("../img/user.svg") no-repeat center;
+	width: 13px;
+	height: 12px;
+}
+
+.compare-link::before {
+	background: url("../img/compare.svg") no-repeat center;
+	width: 10px;
+	height: 12px;
+}
+
+.basket-link::before {
+	background: url("../img/cart.svg") no-repeat center;
+	width: 16px;
+	height: 14px;
+}
+
+.devices-link::after {
+	padding: 2px;
+	margin-left: 10px;
+	content: "+";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	color: #000000;
+	border-radius: 50%;
+	border: 2px solid #000000;
+	text-align: center;
+	opacity: 0.3;
+}
+
+.goods-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.goods-item {
+	margin-right: 40px;
+	max-width: 160px;
+	display: inline-block;
+}
+
+.goods-link {
+	display: inline-block;
+}
+
+.goods-item:last-child {
+	margin-right: 0;
+}
+
+.goods-img {
+	background-color:  #FFE17F;
+	text-align: center;
+}
+
+.goods-img,
+.button-socials::before {
+	content: "";
+	display: inline-block;
+	color: #ffffff;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.virtual-reality {
+	background-image: url("../img/index-icon-section/virtual.svg");
+	background-size: 97px 55px;
+}
+
+.selfie-monopods {
+	background-image: url("../img/index-icon-section/monopods.svg");
+	background-size: 86px 117px;
+	background-position-y: bottom;
+}
+
+.action-camera {
+	background-image: url("../img/index-icon-section/camera.svg");
+	background-size: 71px 87px;
+}
+
+.fitness-bracelets {
+	background-image: url("../img/index-icon-section/bracelets.svg");
+	background-size: 107px 65px;
+}
+
+.smart-watch {
+	background-image: url("../img/index-icon-section/watch.svg");
+	background-size: 56px 98px;
+}
+
+.quadrocopters {
+	background-image: url("../img/index-icon-section/quadrocopters.svg");
+	background-size: 132px 69px;
+}
+
+
+.services-info-item {
+	padding-right: 263px;
+	display: block;
+	color: #000000;
+	min-height: 280px;
+}
+
+.delivery-item {
+	background: url("../img/services-img/delivery.svg") no-repeat center right;
+	background-size:  136px 164px;
+}
+
+.warranty-item {
+	background: url("../img/services-img/warranty.svg") no-repeat center right;
+	background-size:  171px 195px;
+}
+
+.credit-item {
+	background: url("../img/services-img/credit.svg") no-repeat center right;
+	background-size:  156px 188px;
+}
+
+.button-socials {
+	padding: 12px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 50% ;
+	display: inline-block;
+}
+
+.button-socials::before {
+	color: #444444;
+}
+
+.facebook::before {
+	background-image: url("../img/social-icon/facebook-icon.svg");
+	width: 9px;
+	height: 18px;
+}
+
+.instagram::before {
+	background-image: url("../img/social-icon/instagram-icon.svg");
+	width: 16px;
+	height: 16px;
+}
+
+.twitter::before {
+	background-image: url("../img/social-icon/twitter-icon.svg");
+	width: 15px;
+	height: 14px;
+}
