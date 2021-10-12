@@ -49,7 +49,7 @@
 							<a class="devices-link" href="catalog.html">
 								Каталог товаров
 							</a>
-							<ul class="categories-list">
+							<ul class="categories-list visually-hidden">
 								<li class="categories-item">
 									Виртуальная реальность
 								</li>
@@ -179,139 +179,141 @@
 							<button class="filter-button" type="submit">Показать</button>
 						</form>
 					</div>
-					<div class="sorting-wrap">
-						<form class="sorting-form" action="https://echo.htmlacademy.ru/" method="GET">
-							<label class="sorting-title" for="sorting">Сортировка:</label>
-							<select class="sorting-select" id="sorting" name="sorting">
-								<option value="popular">Сначала популярные</option>
-								<option value="cheap">Сначала дешёвые</option>
-								<option value="expensive">Сначала дорогие</option>
-							</select>
-							<button class="visually-hidden" type="submit">Отсортировать</button>
-						</form>
-						<button class="button button-light" type="button">
-							<span class="visually-hidden">Отсортировать дешёвые товары</span>
-						</button>
-						<button class="button" type="button">
-							<span class="visually-hidden">Отсортировать дорогие товары</span>
-						</button>
+					<div class="catalog-right-column">
+						<div class="sorting-wrap">
+							<form class="sorting-form" action="https://echo.htmlacademy.ru/" method="GET">
+								<label class="sorting-title" for="sorting">Сортировка:</label>
+								<select class="sorting-select" id="sorting" name="sorting">
+									<option value="popular">Сначала популярные</option>
+									<option value="cheap">Сначала дешёвые</option>
+									<option value="expensive">Сначала дорогие</option>
+								</select>
+								<button class="visually-hidden" type="submit">Отсортировать</button>
+							</form>
+							<button class="button button-light" type="button">
+								<span class="visually-hidden">Отсортировать дешёвые товары</span>
+							</button>
+							<button class="button" type="button">
+								<span class="visually-hidden">Отсортировать дорогие товары</span>
+							</button>
+						</div>
+						<ul class="goods-card-list">
+							<li class="goods-card active-hover">
+								<a class="goods-link" href="">
+									<img class="goods-img" src="img/catalog-unsinkable-selfie-stick.png" width="360" height="380" alt="Любительская селфи-палка">
+								</a>
+								<div class="text-wrap">
+									<a class="goods-link" href="#">
+										<h3 class="goods-title">Любительская селфи-палка</h3>
+									</a>
+									<span class="goods-price">500 ₽</span>
+								</div>
+								<div class="hover-block visually-hidden">
+									<a class="goods-link-btn" href="">Подробнее</a>
+								</div>
+							</li>
+							<li class="goods-card">
+								<a class="goods-link" href="">
+									<img class="goods-img" src="img/catalog-professional-selfie-stick.png" width="360" height="380" alt="Профессиональная селфи-палка">
+								</a>
+								<div class="text-wrap">
+									<a class="goods-link" href="#">
+										<h3 class="goods-title">Профессиональная селфи-палка</h3>
+									</a>
+									<span class="goods-price">500 ₽</span>
+								</div>
+								<div class="hover-block visually-hidden">
+									<a class="goods-link-btn" href="">Подробнее</a>
+								</div>
+							</li>
+							<li class="goods-card">
+								<a class="goods-link" href="">
+									<img class="goods-img" src="img/catalog-amateur-selfie-stick.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+								</a>
+								<div class="text-wrap">
+									<a class="goods-link" href="#">
+										<h3 class="goods-title">Непотопляемая селфи-палка</h3>
+									</a>
+									<span class="goods-price">500 ₽</span>
+								</div>
+								<div class="hover-block visually-hidden">
+									<a class="goods-link-btn" href="">Подробнее</a>
+								</div>
+							</li>
+							<li class="goods-card">
+								<a class="devices-card-link" href="">
+									<img class="goods-img devices-card-img" src="img/catalog-selfie-stick-hand.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+								</a>
+								<div class="devices-card-text-container">
+									<a class="devices-card-link" href="#">
+										<h3 class="devices-title">Селфи-палка «Следуй за мной»</h3>
+									</a>
+									<span class="devices-price">2500 ₽</span>
+								</div>
+								<div class="hover-block visually-hidden">
+									<a class="devices-link-btn" href="">Подробнее</a>
+								</div>
+							</li>
+						</ul>
+						<button class="button pagination-show-more" type="button">Загрузить еще</button>
+						<ul class="pagination-list">
+							<li class="pagination-item">
+								<a class="pagination-link pagination-prev pagination-disabled">
+									<span class="pagination-text">Назад</span>
+								</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link pagination-current">1</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link" href="#">2</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link" href="#">3</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link" href="#">4</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link" href="#">5</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link" href="#">6</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link" href="#">7</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link" href="#">8</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link" href="#">9</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link" href="#">10</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link" href="#">11</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link" href="#">12</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link" href="#">13</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link" href="#">14</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link" href="#">15</a>
+							</li>
+							<li class="pagination-item">
+								<a class="pagination-link pagination-next" href="#">
+									<span class="pagination-text">Вперёд</span>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<ul class="goods-card-list">
-						<li class="goods-card active-hover">
-							<a class="goods-link" href="">
-								<img class="goods-img" src="img/catalog-unsinkable-selfie-stick.png" width="360" height="380" alt="Любительская селфи-палка">
-							</a>
-							<div class="text-wrap">
-								<a class="goods-link" href="#">
-									<h3 class="goods-title">Любительская селфи-палка</h3>
-								</a>
-								<span class="goods-price">500 ₽</span>
-							</div>
-							<div class="hover-block visually-hidden">
-								<a class="goods-link-btn" href="">Подробнее</a>
-							</div>
-						</li>
-						<li class="goods-card">
-							<a class="goods-link" href="">
-								<img class="goods-img" src="img/catalog-professional-selfie-stick.png" width="360" height="380" alt="Профессиональная селфи-палка">
-							</a>
-							<div class="text-wrap">
-								<a class="goods-link" href="#">
-									<h3 class="goods-title">Профессиональная селфи-палка</h3>
-								</a>
-								<span class="goods-price">500 ₽</span>
-							</div>
-							<div class="hover-block visually-hidden">
-								<a class="goods-link-btn" href="">Подробнее</a>
-							</div>
-						</li>
-						<li class="goods-card">
-							<a class="goods-link" href="">
-								<img class="goods-img" src="img/catalog-amateur-selfie-stick.png" width="360" height="380" alt="Непотопляемая селфи-палка">
-							</a>
-							<div class="text-wrap">
-								<a class="goods-link" href="#">
-									<h3 class="goods-title">Непотопляемая селфи-палка</h3>
-								</a>
-								<span class="goods-price">500 ₽</span>
-							</div>
-							<div class="hover-block visually-hidden">
-								<a class="goods-link-btn" href="">Подробнее</a>
-							</div>
-						</li>
-						<li class="goods-card-list">
-							<a class="devices-card-link" href="">
-								<img class="goods-img devices-card-img" src="img/catalog-selfie-stick-hand.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-							</a>
-							<div class="devices-card-text-container">
-								<a class="devices-card-link" href="#">
-									<h3 class="devices-title">Селфи-палка «Следуй за мной»</h3>
-								</a>
-								<span class="devices-price">2500 ₽</span>
-							</div>
-							<div class="hover-block visually-hidden">
-								<a class="devices-link-btn" href="">Подробнее</a>
-							</div>
-						</li>
-					</ul>
-					<button class="button pagination-show-more" type="button">Загрузить еще</button>
-					<ul class="pagination-list">
-						<li class="pagination-item">
-							<a class="pagination-link pagination-prev pagination-disabled">
-								<span class="pagination-text">Назад</span>
-							</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link pagination-current">1</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link" href="#">2</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link" href="#">3</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link" href="#">4</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link" href="#">5</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link" href="#">6</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link" href="#">7</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link" href="#">8</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link" href="#">9</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link" href="#">10</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link" href="#">11</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link" href="#">12</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link" href="#">13</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link" href="#">14</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link" href="#">15</a>
-						</li>
-						<li class="pagination-item">
-							<a class="pagination-link pagination-next" href="#">
-								<span class="pagination-text">Вперёд</span>
-							</a>
-						</li>
-					</ul>
 				</section>
 			</div>
 		</main>

@@ -569,7 +569,7 @@ button {
 
 .subscribe-title {
 	margin: 0;
-	width: 370px;
+	width: 390px;
 	font-family: Raleway, sans-serif;
 	font-weight: 800;
 	font-size: 50px;
@@ -651,6 +651,15 @@ input[type="email"] {
 	margin-right: 35px;
 }
 
+.catalog {
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog-wrap {
+	margin-bottom: 50px;
+}
+
 .catalog-filter-title,
 .sorting-title {
 	font-family: Raleway, sans-serif;
@@ -658,6 +667,35 @@ input[type="email"] {
 	line-height: 19px;
 	font-weight: 800;
 	text-transform: uppercase;
+}
+
+.catalog-filter-title {
+	background-color: #DCDCDC;
+}
+
+.sorting-wrap {
+	background-color: #EBEBEB;
+}
+
+.goods-card-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.goods-card:nth-child(odd) {
+	margin-right: 40px;
+}
+
+.filter-wrap {
+	width: 330px;
+	margin-right: 70px;
+	color: #000000;
+	background-color: #E5E5E5;
+}
+
+.catalog-right-column {
+	width: 760px;
 }
 
 .filter-title {
@@ -721,6 +759,10 @@ input[type="email"] {
 	text-align: center;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
+}
+
+.pagination-list {
+	background-color: #EBEBEB;
 }
 
 /*footer*/
