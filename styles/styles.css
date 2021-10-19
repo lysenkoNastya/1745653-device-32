@@ -130,6 +130,7 @@ button {
 	justify-content: space-between;
 	min-height: 50px;
 	align-items: center;
+	width: 575px;
 }
 
 .secondary-nav {
@@ -677,7 +678,6 @@ input[type="email"] {
 	text-transform: uppercase;
 	color: #000000;
 	border: 3px solid #dcdcdc;
-	box-sizing: border-box;
 	border-bottom: none;
 }
 
@@ -702,8 +702,9 @@ input[type="email"] {
 /*catalog.html*/
 
 .content {
-	background-image: linear-gradient(to bottom, #dcdcdc 70px, transparent 70px, transparent 70% 100%),
-										linear-gradient(229deg, #ffffff 50%, transparent 50% 51%, #EBEBEB 51% 100%);
+	overflow: hidden;
+	/* background-image: linear-gradient(to bottom, #dcdcdc 70px, transparent 70px, transparent 70% 100%),
+										linear-gradient(229deg, #ffffff 50%, transparent 50% 51%, #EBEBEB 51% 100%); */
 }
 
 .catalog-title {
@@ -716,6 +717,7 @@ input[type="email"] {
 
 .breadcrumbs-list {
 	display: flex;
+	flex-wrap: wrap;
 	color: #ebebeb;
 }
 
@@ -751,19 +753,20 @@ input[type="email"] {
 	align-items: center;
 	min-height: 70px;
 	background-color: #DCDCDC;
-	box-sizing: border-box;
+	position: relative;
 }
 
 
-/* .catalog-filter-title::before {
+.filter-title-wrap::before {
 	content: '';
 	position: absolute;
+	right: 300px;
+	top: 0;
 	background-color: #DCDCDC;
-	height: 100%;
-	right: 0;
-	left: -4000px;
+	height: 70px;
 	z-index: -1;
-} */
+	width: 2000px;
+}
 
 .goods-card-list {
 	display: flex;
@@ -783,35 +786,39 @@ input[type="email"] {
 .filter-wrap {
 	width: 330px;
 	color: #000000;
-	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
 }
 
 .filter-form-wrap {
 	padding: 70px 68px 0 60px;
 	background-color: #EBEBEB;
-	min-height: 100%;
-	box-sizing: border-box;
+	position: relative;
+	flex-grow: 1;
 }
 
-/* .filter-form-wrap::before {
-	content: '';
-	position: absolute;
-	left: -89px;
-	background-color: #E5E5E5;
-	height: 100%;
-	right: 0;
-	left: -9000px;
-	z-index: -1;
-}*/
-
-/* .sorting-wrap::before {
+.filter-form-wrap::before {
 	content: '';
 	position: absolute;
 	background-color: #EBEBEB;
-	height: 100%;
+	right: 300px;
+	top: 0;
+	min-height: 100%;
 	z-index: -1;
-	width: 100vw;
-} */
+	width: 2000px;
+}
+
+ .sorting-wrap::before {
+	content: '';
+	position: absolute;
+	left: 800px;
+	top: 0;
+	background-color: #EBEBEB;
+	height: 70px;
+	z-index: -1;
+	width: 400px;
+}
 
 .catalog-right-column {
 	width: 830px;
@@ -828,6 +835,7 @@ input[type="email"] {
 	display: flex;
 	align-items: center;
 	min-height: 70px;
+	position: relative;
 }
 
 .sorting-select {
