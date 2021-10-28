@@ -1518,16 +1518,16 @@ input[type="email"] {
 	border: 2px solid #AF4FFF;
 }
 
-.footer-nav-link:hover {
-	background-image: linear-gradient(to bottom, #FFC700);
-  background-repeat: no-repeat;
-  background-size: 2px 20px;
-	color: #FFC700;
+.footer-nav-link:hover,
+.footer-nav-link:active {
 	border-radius: 0px;
+	box-shadow: 0px 2px 0px 0px #FFC700;
+	padding: 0;
+	margin: 15px 20px;
+	color: #FFC700;
 }
 
 .footer-nav-link:active {
-	color: #FFC700;
 	opacity: 0.3;
 }
 
@@ -1555,9 +1555,21 @@ input[type="email"] {
 	display: inline-block;
 }
 
+.htmlacademy-link svg {
+	fill:  #FFC700;
+}
+
 .htmlacademy-link:focus {
 	border: 2px solid #AF4FFF;
-	display: inline-block;
+}
+
+.htmlacademy-link:hover svg {
+	fill: #ffffff;
+}
+
+.htmlacademy-link:active svg {
+	fill: #ffffff;
+	opacity: 0.3;
 }
 
 .button-socials::before {
