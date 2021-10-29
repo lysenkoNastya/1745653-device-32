@@ -67,6 +67,7 @@ ul {
 a {
 	color: #000000;
 	text-decoration: none;
+	outline: none;
 }
 
 input[type="submit"],
@@ -94,6 +95,10 @@ button {
   width: 1px;
   height: 1px;
 	overflow: hidden;
+}
+
+button {
+	outline: none;
 }
 
 /*header*/
@@ -173,11 +178,17 @@ button {
 
 .search {
 	display: flex;
+	padding: 10px 15px;
+	margin-left: -15px;
+	border: 2px solid transparent;
+	box-sizing: border-box;
+	border-radius: 20px;
 }
+
 
 .search::before {
 	background-image: url("../img/device-icon/search.svg");
-	width: 16px;
+	width: 18px;
 	height: 16px;
 }
 
@@ -188,6 +199,7 @@ button {
 
 .search-before {
 	width: 100%;
+	outline: none;
 }
 
 .search-before::placeholder {
@@ -195,23 +207,23 @@ button {
 	opacity: 0.3;
 }
 
-.search-before:hover::placeholder {
+.search:hover .search-before::placeholder {
 	color: #000000;
 	opacity: 0.6;
 }
 
 .search:focus {
-	padding: 10px 15px;
 	border: 2px solid #AF4FFF;
-	box-sizing: border-box;
-	border-radius: 20px;
 }
 
-.search:active {
-	padding: 10px 15px;
+.search:focus-visible {
+	border: transparent;
+}
+
+.search:active,
+.search-before:active::placeholder {
 	border: 2px solid #000000;
-	box-sizing: border-box;
-	border-radius: 20px;
+	color: #000000;
 }
 
 .product-catalog-link {
@@ -281,11 +293,37 @@ button {
 	cursor: pointer;
 }
 
+.enter-btn:focus,
+.compare-link:focus,
+.basket-link:focus,
+.header-link:focus {
+	border: 2px solid #AF4FFF;
+}
+
+.enter-btn:active,
+.compare-link:active,
+.basket-link:active {
+	color: #000000;
+	opacity: 0.3;
+}
+
 .enter-btn:hover,
 .compare-link:hover,
-.basket-link:hover,
-.header-link:hover {
-	border: 2px solid #AF4FFF;
+.basket-link:hover {
+	color: #000000;
+	opacity: 0.6;
+}
+
+.header-link:hover,
+.header-link:active {
+	border-radius: 0px;
+	box-shadow: 0px 2px 0px 0px #000000;
+	padding: 0;
+	margin: 10px 20px;
+}
+
+.header-link:active {
+	opacity: 0.3;
 }
 
 .enter-btn::before {
@@ -355,6 +393,12 @@ button {
 	grid-template-columns: repeat(3, max-content);
 	row-gap: 35px;
 	column-gap: 25px;
+}
+
+.devices-wrap:active .product-catalog-link,
+.devices-wrap:active .product-list-icon {
+	color: #000000;
+	opacity: 0.3;
 }
 
 .categories-item {
@@ -1641,4 +1685,10 @@ input[type="email"] {
 .instagram:active:before,
 .facebook:active:before {
 	opacity: 0.3;
+}
+
+.twitter:active,
+.instagram:active,
+.facebook:active {
+	background-color: #FFC700;
 }
