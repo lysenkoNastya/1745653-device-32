@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>HTML Academy: Девайс</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/device-icon/favicon.png">
 		<link rel="stylesheet" href="styles/styles.css">
 	</head>
 
@@ -16,13 +17,14 @@
 						<img src="img/header-logo.svg" width="145" height="36" alt="Логотип Девайс">
 					</div>
 					<nav class="nav">
-						<div class="search-wrap">
-							<form class="search" action="https://echo.htmlacademy.ru/" method="GET">
-								<label class="search-label">
+						<div class="search-form-wrap">
+							<form class="search-form" action="https://echo.htmlacademy.ru/" method="GET">
+								<label for="search"></label>
+								<div class="search-label-wrap">
 									<span class="visually-hidden">Поиск</span>
-									<input class="search-before" type="search" placeholder="Поиск по сайту">
-								</label>
-								<button class="search-btn">Найти</button>
+									<input class="search" type="search" id="search" placeholder="Поиск по сайту" required>
+									<button class="search-btn">Найти</button>
+								</div>
 							</form>
 						</div>
 						<div class="nav-wrap">
@@ -513,7 +515,7 @@
 						<div class="modal-user-wrap">
 							<div class="input-wrap">
 								<label class="modal-label label-name">Ваше имя:
-									<input class="modal-input modal-name" type="text" name="name" placeholder="Имя Фамилия">
+									<input class="modal-input modal-name" type="text" name="name" placeholder="Имя Фамилия" required>
 								</label>
 								<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M0 12H13C12.8 9.4 10.9 7.2 8.3 6.5C9.3 5.9 10 4.8 10 3.5C10 1.6 8.4 0 6.5 0C4.6 0 3 1.6 3 3.5C3 4.8 3.7 5.9 4.7 6.5C2.1 7.2 0.2 9.4 0 12Z"/>
@@ -522,7 +524,7 @@
 							</div>
 							<div class="input-wrap">
 								<label class="modal-label label-email">Ваш e-mail:
-									<input class="modal-input modal-email" type="email" name="email" placeholder="Email">
+									<input class="modal-input modal-email" type="email" name="email" placeholder="Email" required>
 									<small class="text-under-email">Забавный у вас адрес</small>
 									<small class="text-email-active">Подпись под полем для ввода</small>
 								</label>
@@ -533,11 +535,11 @@
 						</div>
 						<div class="modal-product-wrap">
 							<label class="modal-label label-product">Что нужно привезти:
-								<input class="modal-input modal-product" type="text" name="product" placeholder="В свободной форме">
+								<input class="modal-input modal-product" type="text" name="product" placeholder="В свободной форме" required>
 							</label>
 							<div class="amount-wrap">
 								<label class="modal-label label-amount">Количество:
-									<input class="modal-amount" type="number" placeholder="0" name="amount"	min="10" max="100">
+									<input class="modal-amount" type="number" placeholder="0" name="amount"	min="10" max="100" required>
 								</label>
 								<div class="modal-svg-wrap">
 									<div class="modal-minus-svg">
