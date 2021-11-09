@@ -33,8 +33,8 @@
 							<div class="user-left-block">
 								<button class="enter-btn" type="button">Войти</button>
 								<div class="visually-hidden">
-									<a class="user-link" href="#">Коля Петухов</a>
-									<button class="end-btn" type="button">Выйти</button>
+									<a class="user-link" href="#" tabindex="-1">Коля Петухов</a>
+									<button class="end-btn" type="button" tabindex="-1">Выйти</button>
 								</div>
 							</div>
 							<div class="user-right-block">
@@ -50,12 +50,12 @@
 								<span class="product-list-icon"></span>
 							</div>
 							<ul class="categories-list">
-								<li class="categories-item">Виртуальная реальность</li>
-								<li class="categories-item">Фитнес-браслеты</li>
-								<li class="categories-item quadrocopters-item">Квадрокоптеры</li>
-								<li class="categories-item">Моноподы для cелфи</li>
-								<li class="categories-item">Умные часы</li>
-								<li class="categories-item">Экшн-камеры</li>
+								<li class="categories-item"><a href="#">Виртуальная реальность</a></li>
+								<li class="categories-item"><a href="#">Фитнес-браслеты</a></li>
+								<li class="categories-item quadrocopters-item"><a href="#">Квадрокоптеры</a></li>
+								<li class="categories-item"><a href="#">Моноподы для cелфи</a></li>
+								<li class="categories-item"><a href="#">Умные часы</a></li>
+								<li class="categories-item"><a href="#">Экшн-камеры</a></li>
 							</ul>
 						</div>
 						<ul class="header-list">
@@ -84,10 +84,10 @@
 								<a class="breadcrumbs-link" href="index.html">Главная</a>
 							</li>
 							<li class="breadcrumbs-item">
-								<a class="breadcrumbs-link">Каталог товаров</a>
+								<a class="breadcrumbs-link" href="#">Каталог товаров</a>
 							</li>
 							<li class="breadcrumbs-item">
-								<a class="breadcrumbs-link">Моноподы для селфи</a>
+								<a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
 							</li>
 						</ul>
 					</div>
@@ -129,33 +129,38 @@
 										<legend class="filter-title">Цвет</legend>
 										<ul class="filter-list">
 											<li class="filter-item">
-												<label class="filter-label">Черный
+												<label class="filter-label">
 													<input class="filter-input" type="checkbox" name="color" value="black" checked>
 													<span class="filter-mark"></span>
+													<span class="control-label">Черный</span>
 												</label>
 											</li>
 											<li class="filter-item">
-												<label class="filter-label">Белый
+												<label class="filter-label">
 													<input class="filter-input" type="checkbox" name="color" value="white"	checked>
 													<span class="filter-mark"></span>
+													<span class="control-label">Белый</span>
 												</label>
 											</li>
 											<li class="filter-item">
-												<label class="filter-label">Синий
+												<label class="filter-label">
 													<input class="filter-input" type="checkbox" name="color" value="blue">
 													<span class="filter-mark"></span>
+													<span class="control-label">Синий</span>
 												</label>
 											</li>
 											<li class="filter-item">
-												<label class="filter-label">Красный
+												<label class="filter-label">
 													<input class="filter-input" type="checkbox" name="color" value="red">
 													<span class="filter-mark"></span>
+													<span class="control-label">Красный</span>
 												</label>
 											</li>
 											<li class="filter-item">
-												<label class="filter-label">Розовый
+												<label class="filter-label">
 													<input class="filter-input" type="checkbox" name="color" value="pink">
 													<span class="filter-mark"></span>
+													<span class="control-label">Розовый</span>
 												</label>
 											</li>
 										</ul>
@@ -175,7 +180,6 @@
 													<input class="filter-input" type="radio" name="bluetooth-group"	value="no-bluetooth">
 													<span class="filter-mark bluetooth-mark"></span>
 													<span class="control-label">Нет</span>
-
 												</label>
 											</li>
 										</ul>
@@ -193,14 +197,22 @@
 										<option value="cheap">Сначала дешёвые</option>
 										<option value="expensive">Сначала дорогие</option>
 									</select>
-									<button class="visually-hidden" type="submit">Отсортировать</button>
+									<button class="visually-hidden" type="submit" tabindex="-1">Отсортировать</button>
 								</form>
-								<button class="button button-light" type="button">
-									<span class="visually-hidden">Отсортировать дешёвые товары</span>
-								</button>
-								<button class="button" type="button">
-									<span class="visually-hidden">Отсортировать дорогие товары</span>
-								</button>
+								<div class="sorting-button-wrap">
+									<button class="sorting-button button-light" type="button">
+										<span class="visually-hidden">Отсортировать дешёвые товары</span>
+										<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.5 0L11 10H0" fill="black"/>
+										</svg>
+									</button>
+									<button class="sorting-button active" type="button">
+										<span class="visually-hidden">Отсортировать дорогие товары</span>
+										<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.5 10L0 0H11" fill="black"/>
+										</svg>
+									</button>
+								</div>
 							</div>
 							<div class="goods-wrap-content">
 								<ul class="goods-card-list">
@@ -249,6 +261,7 @@
 									<li class="goods-card">
 										<a class="goods-link-img" href="#">
 											<img class="goods-img devices-card-img" src="img/catalog-selfie-stick-hand.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+											<span class="new-img-text">NEW</span>
 											<div class="hover-block">
 												<span class="goods-link-btn">Подробнее</span>
 											</div>
@@ -266,12 +279,12 @@
 										<button class="button pagination-show-more" type="button">Загрузить еще</button>
 									</div>
 									<div class="pagination-block">
-										<a class="pagination-btn pagination-prev pagination-disabled">
+										<a class="pagination-btn pagination-prev pagination-disabled" href="#">
 											<span class="pagination-text">Назад</span>
 										</a>
 										<ul class="pagination-list">
 											<li class="pagination-item">
-												<a class="pagination-link pagination-number pagination-current">1</a>
+												<a class="pagination-link pagination-number pagination-current" href="#">1</a>
 											</li>
 											<li class="pagination-item">
 												<a class="pagination-link pagination-number" href="#">2</a>
@@ -283,37 +296,37 @@
 												<a class="pagination-link pagination-number" href="#">...</a>
 											</li>
 											<li class="pagination-item visually-hidden">
-												<a class="pagination-link pagination-number" href="#">4</a>
+												<a class="pagination-link pagination-number" href="#" tabindex="-1">4</a>
 											</li>
 											<li class="pagination-item visually-hidden">
-												<a class="pagination-link pagination-number" href="#">5</a>
+												<a class="pagination-link pagination-number" href="#" tabindex="-1">5</a>
 											</li>
 											<li class="pagination-item visually-hidden">
-												<a class="pagination-link pagination-number" href="#">6</a>
+												<a class="pagination-link pagination-number" href="#" tabindex="-1">6</a>
 											</li>
 											<li class="pagination-item visually-hidden">
-												<a class="pagination-link pagination-number" href="#">7</a>
+												<a class="pagination-link pagination-number" href="#" tabindex="-1">7</a>
 											</li>
 											<li class="pagination-item visually-hidden">
-												<a class="pagination-link pagination-number" href="#">8</a>
+												<a class="pagination-link pagination-number" href="#" tabindex="-1">8</a>
 											</li>
 											<li class="pagination-item visually-hidden">
-												<a class="pagination-link pagination-number" href="#">9</a>
+												<a class="pagination-link pagination-number" href="#" tabindex="-1">9</a>
 											</li>
 											<li class="pagination-item visually-hidden">
-												<a class="pagination-link pagination-number" href="#">10</a>
+												<a class="pagination-link pagination-number" href="#" tabindex="-1">10</a>
 											</li>
 											<li class="pagination-item visually-hidden">
-												<a class="pagination-link pagination-number" href="#">11</a>
+												<a class="pagination-link pagination-number" href="#" tabindex="-1">11</a>
 											</li>
 											<li class="pagination-item visually-hidden">
-												<a class="pagination-link pagination-number" href="#">12</a>
+												<a class="pagination-link pagination-number" href="#" tabindex="-1">12</a>
 											</li>
 											<li class="pagination-item visually-hidden">
-												<a class="pagination-link pagination-number" href="#">13</a>
+												<a class="pagination-link pagination-number" href="#" tabindex="-1">13</a>
 											</li>
 											<li class="pagination-item visually-hidden">
-												<a class="pagination-link pagination-number" href="#">14</a>
+												<a class="pagination-link pagination-number" href="#" tabindex="-1">14</a>
 											</li>
 											<li class="pagination-item">
 												<a class="pagination-link pagination-number" href="#">15</a>
@@ -333,7 +346,7 @@
 		<footer class="footer-page">
 			<div class="container">
 				<div class="footer-logo">
-					<a class="logo-link" href="index.html">
+					<a class="logo-link" href="index.html" tabindex="-1">
 						<img src="img/footer-logo.svg" width="145" height="36" alt="Логотип Девайс">
 					</a>
 				</div>
