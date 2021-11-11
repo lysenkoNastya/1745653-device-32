@@ -10,7 +10,7 @@
 	</head>
 
 	<body>
-		<header class="header">
+		<header class="header header-catalog">
 			<div class="container">
 				<div class="header-page">
 					<div class="header-logo">
@@ -39,7 +39,45 @@
 							</div>
 							<div class="user-right-block">
 								<a class="compare-link" href="#">Сравнить</a>
-								<a class="basket-link" href="#">Корзина</a>
+								<a class="basket-link" href="#">Корзина
+									<span class="basket-number">2</span>
+								</a>
+								<div class="popover-cart">
+									<div class="popover-content">
+										<h2 class="visually-hidden">Корзина</h2>
+										<ul class="popover-list">
+											<li class="popover-item">
+												<div class="popover-card-wrap">
+													<img class="popover-img" src="img/catalog-unsinkable-selfie-stick.png" width="41" height="43" alt="Любительская селфи-палка">
+													<h3 class="popover-title">Любительская селфи-палка</h3>
+												</div>
+												<button type="button" class="popover-delete-btn">
+													<span class="visually-hidden">Удалить из корзины</span>
+												</button>
+											</li>
+											<li class="popover-item">
+												<div class="popover-card-wrap">
+													<img class="popover-img" src="img/catalog-professional-selfie-stick.png" width="41" height="43" alt="Профессиональная селфи-палка">
+													<h3 class="popover-title">Профессиональная<br> селфи-палка</h3>
+												</div>
+												<button type="button" class="popover-delete-btn">
+													<span class="visually-hidden">Удалить из корзины</span>
+												</button>
+											</li>
+										</ul>
+										<div class="count-wrap">
+											<div class="count-product-wrap">
+												<h3 class="count-product-title">Товаров:</h3>
+												<span class="product-number">2</span>
+											</div>
+											<div class="sum-product-wrap">
+												<h3 class="sum-product-title">Сумма:</h3>
+												<span class="sum-product-price">2000 ₽</span>
+											</div>
+										</div>
+									</div>
+									<a href="#" class="basket-open-link">Открыть корзину</a>
+								</div>
 							</div>
 						</div>
 					</nav>

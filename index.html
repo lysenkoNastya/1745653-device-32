@@ -41,9 +41,6 @@
 									<span class="basket-number">2</span>
 								</a>
 								<div class="popover-cart">
-									<button class="popover-close-button button button-light">
-										<span class="visually-hidden">Закрыть</span>
-									</button>
 									<div class="popover-content">
 										<h2 class="visually-hidden">Корзина</h2>
 										<ul class="popover-list">
@@ -147,8 +144,8 @@
 												<a class="details-link" href="#">Подробнее</a>
 											</div>
 											<ul class="details-list-button">
-												<li class="details-item-button slider-pagination-button-current">
-													<button class="details-button" type="button">
+												<li class="details-item-button">
+													<button class="details-button details-active-btn" type="button">
 														<span class="visually-hidden">1 фото</span>
 													</button>
 												</li>
@@ -329,7 +326,7 @@
 					<h2 class="visually-hidden ">Дополнительные услуги</h2>
 					<ul class="services-button-list">
 						<li class="services-button-item">
-							<button class="services-button delivery-info active" type="submit">Доставка</button>
+							<button class="services-button delivery-info services-button-active" type="submit">Доставка</button>
 						</li>
 						<li class="services-button-item">
 							<button class="services-button warranty-info" type="submit">Гарантия</button>
@@ -368,11 +365,11 @@
 			</section>
 			<section class="delivery-section">
 				<div class="container">
-					<div class="delivery-section-wrap">
+					<div class="delivery-section-wrap" tabindex="0">
 						<span class="delivery-section-img"></span>
 						<h2 class="delivery-section-title">Доставим редкий товар под заказ</h2>
 						<div class="delivery-block-info">
-							<button class="info" type="button" title="Посмотреть дополнительную информацию"></button>
+							<button class="info" type="button" title="Посмотреть дополнительную информацию" tabindex="-1"></button>
 						</div>
 					</div>
 					</div>
@@ -390,17 +387,17 @@
 							</p>
 							<ul class="about-list">
 								<li class="about-item">
-									<a class="about-link" href="">
+									<a class="about-link" href="" tabindex="-1">
 										Меловые линии
 									</a>
 								</li>
 								<li class="about-item">
-									<a class="about-link" href="">
+									<a class="about-link" href="" tabindex="-1">
 										СДИК
 									</a>
 								</li>
 								<li class="about-item">
-									<a class="about-link" href="">
+									<a class="about-link" href="" tabindex="-1">
 										ТоксБерри
 									</a>
 								</li>
@@ -415,7 +412,7 @@
 								<h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
 								<div class="contacts-address">
 									<p class="contacts-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-									<a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+									<a class="phone" href="tel:+78128121212" tabindex="-1">+7 (812) 812-12-12</a>
 								</div>
 								<h3 class="contacts-subtitle">Время работы</h3>
 								<ul class="schedule-list">
@@ -528,7 +525,6 @@
 								<label class="modal-label label-email">Ваш e-mail:
 									<input class="modal-input modal-email" type="email" name="email" placeholder="Email" required>
 									<small class="text-under-email">Забавный у вас адрес</small>
-									<small class="text-email-active">Подпись под полем для ввода</small>
 								</label>
 								<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M7.6 8C7.2 8 7 7.9 6.6 7.7L0 4V11C0 11.6 0.4 12 0.9 12H14.1C14.7 12 15 11.6 15 11V4L8.5 7.7C8.1 7.9 7.9 8 7.6 8ZM14.1 0H0.9C0.4 0 0 0.5 0 1V1.8L7.5 6L15 1.8V1C15 0.5 14.6 0 14.1 0Z"/>
@@ -541,22 +537,20 @@
 							</label>
 							<div class="amount-wrap">
 								<label class="modal-label label-amount">Количество:
-									<input class="modal-amount" type="number" placeholder="0" name="amount"	min="10" max="100" required>
+									<input class="modal-amount" type="number" placeholder="1" name="amount"	min="10" max="100" required>
 								</label>
-								<div class="modal-svg-wrap">
-									<div class="modal-minus-svg">
-										<svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M16 0H0V2H16V0Z"/>
-										</svg>
-									</div>
-									<div class="modal-plus-svg">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>
-										</svg>
-									</div>
-								</div>
+								<button type="button" class="modal-minus-svg">
+									<svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16 0H0V2H16V0Z" fill="black"/>
+									</svg>
+								</button>
+								<button type="button" class="modal-plus-svg">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
+									</svg>
+								</button>
 								<div class="amount-info">
-									<button class="info amount-info-btn" type="button" title="Посмотреть дополнительную информацию"></button>
+									<button class="info amount-info-btn" type="button" title="Посмотреть дополнительную информацию"  tabindex="-1"></button>
 									<div class="amount-info-block">
 										<p class="amount-info-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
 											к провозу багажа.</p>
