@@ -31,10 +31,10 @@
 						</div>
 						<div class="nav-wrap">
 							<div class="user-left-block">
-								<button class="enter-btn" type="button">Войти</button>
-								<div class="visually-hidden">
-									<a class="user-link" href="#" tabindex="-1">Коля Петухов</a>
-									<button class="end-btn" type="button" tabindex="-1">Выйти</button>
+								<button class="enter-btn visually-hidden" type="button" tabindex="-1">Войти</button>
+								<div class="user-name-wrap">
+									<a class="user-link enter-btn" href="#" >Коля Петухов</a>
+									<button class="end-btn" type="button">Выйти</button>
 								</div>
 							</div>
 							<div class="user-right-block">
@@ -47,7 +47,7 @@
 										<h2 class="visually-hidden">Корзина</h2>
 										<ul class="popover-list">
 											<li class="popover-item">
-												<div class="popover-card-wrap">
+												<div class="popover-card-wrap" tabindex="0">
 													<img class="popover-img" src="img/catalog-unsinkable-selfie-stick.png" width="41" height="43" alt="Любительская селфи-палка">
 													<h3 class="popover-title">Любительская селфи-палка</h3>
 												</div>
@@ -56,7 +56,7 @@
 												</button>
 											</li>
 											<li class="popover-item">
-												<div class="popover-card-wrap">
+												<div class="popover-card-wrap" tabindex="0">
 													<img class="popover-img" src="img/catalog-professional-selfie-stick.png" width="41" height="43" alt="Профессиональная селфи-палка">
 													<h3 class="popover-title">Профессиональная<br> селфи-палка</h3>
 												</div>
@@ -160,7 +160,7 @@
 													от <input class="price-input" type="number" name="min-price" value="0">
 												</label>
 												<label class="price-label">
-													до <input class="price-input" type="number" name="max-price" value="5000" style="width: 35px">
+													до <input class="price-input" type="number" name="max-price" value="5000" style="width: 40px">
 												</label>
 											</div>
 										</div>
