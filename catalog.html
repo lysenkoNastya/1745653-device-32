@@ -26,7 +26,7 @@
 								<div class="search-label-wrap">
 									<span class="visually-hidden">Поиск</span>
 									<input class="search" type="search" id="search" placeholder="Поиск по сайту" required>
-									<button class="search-btn">Найти</button>
+									<button class="search-btn" type="submit">Найти</button>
 								</div>
 							</form>
 						</div>
@@ -52,7 +52,7 @@
 													<img class="popover-img" src="img/catalog-unsinkable-selfie-stick.png" width="41" height="43" alt="Любительская селфи-палка">
 													<h3 class="popover-title">Любительская<span class="text-br">селфи-палка</span></h3>
 												</div>
-												<button type="button" class="popover-delete-btn">
+												<button class="popover-delete-btn" type="button">
 													<span class="visually-hidden">Удалить из корзины</span>
 												</button>
 											</li>
@@ -61,7 +61,7 @@
 													<img class="popover-img" src="img/catalog-professional-selfie-stick.png" width="41" height="43" alt="Профессиональная селфи-палка">
 													<h3 class="popover-title">Профессиональная<br> селфи-палка</h3>
 												</div>
-												<button type="button" class="popover-delete-btn">
+												<button class="popover-delete-btn" type="button">
 													<span class="visually-hidden">Удалить из корзины</span>
 												</button>
 											</li>
@@ -121,10 +121,10 @@
 						<h2 class="catalog-title">Моноподы для селфи</h2>
 						<ul class="breadcrumbs-list">
 							<li class="breadcrumbs-item">
-								<a class="breadcrumbs-link" href="index.html">Главная</a>
+								<a class="breadcrumbs-link breadcrumbs-arrow" href="index.html">Главная</a>
 							</li>
 							<li class="breadcrumbs-item">
-								<a class="breadcrumbs-link" href="#">Каталог товаров</a>
+								<a class="breadcrumbs-link breadcrumbs-arrow" href="#">Каталог товаров</a>
 							</li>
 							<li class="breadcrumbs-item">
 								<a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
@@ -147,10 +147,10 @@
 										<div class="range">
 											<div class="range-scale">
 												<div class="range-bar" style="left: 0px; width: 115px">
-													<button class="range-toggle toggle-min">
+													<button class="range-toggle toggle-min" type="button">
 														<span class="visually-hidden">Изменить минимальную цену.</span>
 													</button>
-													<button class="range-toggle toggle-max">
+													<button class="range-toggle toggle-max" type="button">
 														<span class="visually-hidden">Изменить максимальную цену.</span>
 													</button>
 												</div>
@@ -242,13 +242,13 @@
 								<div class="sorting-button-wrap">
 									<button class="sorting-button button-light" type="button">
 										<span class="visually-hidden">Отсортировать дешёвые товары</span>
-										<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Отсортировать дешёвые товары">
 											<path d="M5.5 0L11 10H0" fill="black"/>
 										</svg>
 									</button>
 									<button class="sorting-button active" type="button">
 										<span class="visually-hidden">Отсортировать дорогие товары</span>
-										<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Отсортировать дорогие товары">
 											<path d="M5.5 10L0 0H11" fill="black"/>
 										</svg>
 									</button>
@@ -256,57 +256,57 @@
 							</div>
 							<div class="goods-wrap-content">
 								<ul class="goods-card-list">
-									<li class="goods-card active-hover">
-										<a class="goods-link-img" href="#">
+									<li class="goods-card active-hover" tabindex="0">
+										<a class="goods-link-img" href="#" tabindex="-1">
 											<img class="goods-img" src="img/catalog-amateur-selfie-stick.png" width="360" height="380" alt="Любительская селфи-палка">
 											<div class="hover-block">
 												<span class="goods-link-btn">Подробнее</span>
 											</div>
 										</a>
-										<a class="goods-link link-title first-link-title" href="#">
+										<a class="goods-link link-title first-link-title" href="#" tabindex="-1">
 											<h3 class="goods-title">Любительская селфи-палка</h3>
 										</a>
 										<div class="text-price">
 											<span class="goods-price">500 ₽</span>
 										</div>
 									</li>
-									<li class="goods-card">
-										<a class="goods-link-img" href="#">
+									<li class="goods-card" tabindex="0">
+										<a class="goods-link-img" href="#" tabindex="-1">
 											<img class="goods-img" src="img/catalog-professional-selfie-stick.png" width="360" height="380" alt="Профессиональная селфи-палка">
 											<div class="hover-block">
 												<span class="goods-link-btn">Подробнее</span>
 											</div>
 										</a>
-										<a class="goods-link link-title" href="#">
+										<a class="goods-link link-title" href="#" tabindex="-1">
 											<h3 class="goods-title">Профессиональная<br> селфи-палка</h3>
 										</a>
 										<div class="text-price">
 											<span class="goods-price">1 500 ₽</span>
 										</div>
 									</li>
-									<li class="goods-card">
-										<a class="goods-link-img" href="#">
+									<li class="goods-card" tabindex="0">
+										<a class="goods-link-img" href="#" tabindex="-1">
 											<img class="goods-img" src="img/catalog-unsinkable-selfie-stick.png" width="360" height="380" alt="Непотопляемая селфи-палка">
 											<div class="hover-block">
 												<span class="goods-link-btn">Подробнее</span>
 											</div>
 										</a>
-										<a class="goods-link link-title" href="#">
+										<a class="goods-link link-title" href="#" tabindex="-1">
 											<h3 class="goods-title">Непотопляемая <br>   селфи-палка</h3>
 										</a>
 										<div class="text-price">
 											<span class="goods-price">2 500 ₽</span>
 										</div>
 									</li>
-									<li class="goods-card">
-										<a class="goods-link-img" href="#">
+									<li class="goods-card" tabindex="0">
+										<a class="goods-link-img" href="#" tabindex="-1">
 											<img class="goods-img devices-card-img" src="img/catalog-selfie-stick-hand.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
 											<span class="new-img-text">NEW</span>
 											<div class="hover-block">
 												<span class="goods-link-btn">Подробнее</span>
 											</div>
 										</a>
-										<a class="goods-link link-title" href="#">
+										<a class="goods-link link-title" href="#" tabindex="-1">
 											<h3 class="goods-title">Селфи-палка «Следуй за мной»</h3>
 										</a>
 										<div class="text-price">
@@ -409,7 +409,7 @@
 					<ul class="footer-socials-list">
 						<li class="footer-socials-item">
 							<a class="button-socials" href="#">
-								<svg class="social-icon" width="9" height="18" viewBox="0 0 9 18" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+								<svg class="social-icon" width="9" height="18" viewBox="0 0 9 18" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin" role="img" aria-label="Фейсбук">
 									<use xlink:href="#img-facebook-icon"></use>
 								</svg>
 								<span class="visually-hidden">Фейсбук</span>
@@ -417,7 +417,7 @@
 						</li>
 						<li class="footer-socials-item">
 							<a class="button-socials" href="#">
-								<svg class="social-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+								<svg class="social-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin" role="img" aria-label="Инстаграм">
 									<use xlink:href="#img-instagram-icon"></use>
 								</svg>
 								<span class="visually-hidden">Инстаграм</span>
@@ -425,7 +425,7 @@
 						</li>
 						<li class="footer-socials-item">
 							<a class="button-socials" href="#">
-								<svg class="social-icon" width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+								<svg class="social-icon" width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin" role="img" aria-label="Твиттер">
 									<use xlink:href="#img-twitter-icon"></use>
 								</svg>
 								<span class="visually-hidden">Твиттер</span>
@@ -433,7 +433,7 @@
 						</li>
 					</ul>
 					<a class="htmlacademy-link" href="https://htmlacademy.ru/">
-						<svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ссылка на HtmlAcademy">
 							<path d="M0 12.8999V15.4999H2.5V12.8999H0Z"/>
 							<path d="M11.6 4.5C10 4.5 8.80002 5.2 8.00002 6.2H7.90002V0H5.90002V15.5H7.90002V10.2C7.90002 8.1 9.20002 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z"/>
 							<path d="M26.6 4.8001H21.8V1.1001H19.8V4.9001H17.9V6.9001H19.8V12.9001C19.8 14.6001 20.8 15.6001 22.5 15.6001H26.6V13.6001H22.9C22.2 13.6001 21.8 13.2001 21.8 12.5001V6.8001H26.6V4.8001Z"/>
