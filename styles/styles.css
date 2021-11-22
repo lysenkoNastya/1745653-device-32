@@ -1323,7 +1323,7 @@ input[type='search']::-webkit-search-results-decoration {
 .services-info-text {
 	margin: 0;
 	margin-right: auto;
-	max-width: 500px;
+	max-width: 455px;
 	font-size: 18px;
 	line-height: 30px;
 	color: #444444;
@@ -1543,13 +1543,13 @@ input[type='search']::-webkit-search-results-decoration {
 .subscribe-wrap {
 	margin-bottom: 60px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .subscribe-title {
 	margin: 0;
-	margin-right: auto;
-	width: 390px;
+	margin-right: 240px;
+	max-width: 360px;
 	font-family: 'Raleway', Arial, sans-serif;
 	font-weight: 800;
 	font-size: 50px;
@@ -1603,7 +1603,7 @@ input[type='search']::-webkit-search-results-decoration {
 .subscribe-info {
 	margin: 0;
 	padding-top: 10px;
-	width: 560px;
+	max-width: 528px;
 	color: #444444;
 }
 
@@ -2709,12 +2709,6 @@ input[type=number]::-webkit-inner-spin-button {
 	outline: none;
 }
 
-.text-price {
-	margin-top: 3px;
-	grid-column: 2/3;
-	justify-self: flex-end;
-}
-
 .goods-title {
 	margin: 0;
 	font-weight: 700;
@@ -2729,6 +2723,9 @@ input[type=number]::-webkit-inner-spin-button {
 	line-height: 21px;
 	color: #444444;
 	cursor: pointer;
+	margin-top: 3px;
+	grid-column: 2/3;
+	justify-self: flex-end;
 }
 
 .goods-card-list {
